@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="tictactoe.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<title>Tic Tac Toe</title>
+</head>
+<body>
+<h1 class=text-center>TicTacToe
+</h1>
+<div class="center-block text-center" id="pl">Player Turn</div>
+<div id="screen" class="center-block">
+<canvas id="myCanvas" width="270px" height="270px" class="center-block"></canvas>
+</div>
+<button id="reset" class="btn btn-danger center-block">Reset</button>
+
+<button id="settings" class="btn btn-danger" data-toggle="modal" data-target="#myModal" >Settings</button>
+
+<!-- Modal1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Game Settings</h4>
+      </div>
+      <div class="modal-body text-center">
+        <p> Number of players </p> <label class="radio-inline">
+  <input type="radio" name="nbplayers" value="1"> 1
+</label>
+<label class="radio-inline">
+  <input type="radio" name="nbplayers" value="2"> 2
+</label> <br><br>
+        </div>
+      <div class="modal-footer">
+        <button id="submit" type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<!-- Modal1 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Game Settings</h4>
+      </div>
+      <div class="modal-body text-center">
+        <p> Your symbol </p> <label class="radio-inline">
+  <input type="radio" name="symbol" value="x"> x
+</label>
+<label class="radio-inline">
+  <input type="radio" name="symbol" value="o"> o
+</label> <br><br>
+        </div>
+      <div class="modal-footer">
+        <button id="submit2" type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/16.7.3/jcanvas.min.js" ></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="tictactoe.js" async></script>
+
+</body>
+</html>
